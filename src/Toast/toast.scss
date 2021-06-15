@@ -1,0 +1,98 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.toast-notification {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000000d9;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  position: fixed;
+  top: 8px;
+  left: 0;
+  z-index: 1010;
+  width: 100%;
+  pointer-events: none;
+}
+
+.toast-notice-wrapper.notice-enter {
+  opacity: 0.01;
+  transform: scale(0);
+}
+
+.toast-notice-wrapper.notice-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease-out;
+}
+
+.toast-notice-wrapper.notice-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-notice-wrapper.notice-exit-active {
+  opacity: 0.01;
+  transform: translateY(-40%);
+  transition: all 300ms ease-out;
+}
+
+.toast-notice{
+  padding: 8px;
+  text-align: center;
+}
+
+.toast-notice-content {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  pointer-events: all;
+}
+
+.toast-notice > span {
+  margin-left: 6px;
+  line-height: 100%;
+}
+
+.toast-notice > svg {
+  font-size: 18px;
+}
+
+.toast-notice.info > svg {
+  color: #1890ff;
+}
+
+.toast-notice.success > svg {
+  color: #52c41a;
+}
+
+.toast-notice.warning > svg {
+  color: #faad14;
+}
+
+.toast-notice.error > svg {
+  color: #f74a53;
+}
+
+.toast-notice.loading > svg {
+  color: #1890ff;
+  animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
