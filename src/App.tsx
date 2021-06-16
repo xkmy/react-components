@@ -1,5 +1,7 @@
 import React from 'react'
-import Toast from './Toast/Toast'
+import Toast from './components/Toast/Toast'
+import Button from './components/Button/Button'
+import Progress from './components/Progress/Progress'
 
 function App() {
   return (
@@ -12,13 +14,16 @@ function App() {
       </div>
       <div
         onClick={() => {
-          const hide = Toast.loading('加载中...',1000)
+          const hide = Toast.loading('加载中...', 1000)
           setTimeout(hide, 2000)
         }}
         style={{ zIndex: 100 }}
       >
         loading
       </div>
+
+      <Button type='danger'>123</Button>
+      <Progress percent={20}></Progress>
     </div>
   )
 }

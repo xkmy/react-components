@@ -67,7 +67,7 @@ const Notification = forwardRef((props: Props, ref: Ref<NotificationType>) => {
   return (
     <TransitionGroup className='toast-notification'>
       {notices.map(notice => (
-        <CSSTransition key={notice.key} classNames='toast-notice-wrapper notice' timeout={time}>
+        <CSSTransition key={notice.key} classNames='notice' timeout={time}>
           <Notice {...notice} />
         </CSSTransition>
       ))}

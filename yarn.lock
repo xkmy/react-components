@@ -678,6 +678,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+ts-tool-library@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.nlark.com/ts-tool-library/download/ts-tool-library-1.0.1.tgz#2dd9b96be5d1cce26d3ef7956f8394a3b3bfcfe6"
+  integrity sha1-Ldm5a+XRzOJtPveVb4OUo7O/z+Y=
+
 typescript@^4.3.2:
   version "4.3.2"
   resolved "https://registry.nlark.com/typescript/download/typescript-4.3.2.tgz?cache=0&sync_timestamp=1623741679902&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
